@@ -16,10 +16,23 @@ package divisibility;
 //Enter the divisor: 0
 //10 is not divisible by 0
 
+import java.util.*;
 
 public class Divisibility {
 
     public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        
+        System.out.print("Enter the divider: ");
+        int x = inp.nextInt();
+        System.out.println("Enter the dividor: ");
+        int y = inp.nextInt();
 
+        if (x % y == 0) {
+            System.out.println(x + " is divisible by " + y);
+        }
+        else {
+            System.out.println(x + " is NOT divisible by " + y);
+        }    
     }
 }
