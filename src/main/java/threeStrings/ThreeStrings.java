@@ -29,7 +29,7 @@ public class ThreeStrings {
         System.out.print("Third Print? ");
         String c = inp.nextLine();
 
-        string ab = a + b;
+        String ab = a + b;
         int x = ab.length();
         int y = c.length();
         
