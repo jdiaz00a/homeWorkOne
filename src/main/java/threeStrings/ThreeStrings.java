@@ -21,6 +21,25 @@ package threeStrings;
 public class ThreeStrings {
 
     public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        System.out.print("First Print? ");
+        String a = inp.nextLine();
+        System.out.print("Second Print? ");
+        String b = inp.nextLine();
+        System.out.print("Third Print? ");
+        String c = inp.nextLine();
 
+        string ab = a + b;
+        int x = ab.length();
+        int y = c.length();
+        
+        if(x != y) {
+            System.out.println(a + " + " + b +" is NOT equal to " + c);
+        }
+        else {
+            System.out.println(a + " + " + b +" IS equal to " + c);
+        }    
+
+        
     }
 }
