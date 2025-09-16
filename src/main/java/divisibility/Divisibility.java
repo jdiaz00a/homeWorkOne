@@ -25,14 +25,21 @@ public class Divisibility {
         
         System.out.print("Enter the divider: ");
         int x = inp.nextInt();
-        System.out.println("Enter the dividor: ");
+        System.out.print("Enter the dividor: ");
         int y = inp.nextInt();
 
-        if (x % y == 0) {
-            System.out.println(x + " is divisible by " + y);
+        if (y == 0) {
+            System.out.print(x + " is NOT divisible by 0");
         }
         else {
-            System.out.println(x + " is NOT divisible by " + y);
-        }    
+            int z = x/y;
+            
+            if (x % y == 0) {
+                System.out.println(x + " is divisible by " + y + "\nBecause " + y + " goes into " + x + " -> " + z + " times. " + x + " is evenly divisible by " + y); 
+            }   
+            else {
+                System.out.println(x + " is NOT divisible by " + y);
+            }    
+        }
     }
 }
