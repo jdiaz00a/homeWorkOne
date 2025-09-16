@@ -10,4 +10,15 @@ public class IsInteger {
 //    Return true if it is an integer, or false if it is not.
 //
 
+  public boolean isInteger(String x) {
+    int a = 0;
+
+    for(int i = a;i < x.length(); i++){
+      if(!Character.isDigit(x.charAt(i))) {
+        return false;
+      }
+    }
+    return true;
+  } 
+
 }
